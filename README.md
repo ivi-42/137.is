@@ -8,3 +8,8 @@ Hard computing, also known as "classical computing," refers to the use of tradit
 
 Soft computing, on the other hand, is a term that encompasses a range of techniques that are less precise and more flexible than hard computing approaches. It includes techniques such as artificial neural networks, fuzzy logic, and genetic algorithms, which are inspired by natural processes and are designed to be more tolerant of uncertainty and imprecision. Soft computing approaches are often used in situations where it is more important to find a satisfactory solution than to find the optimal solution, or where the data or problem characteristics are too complex or uncertain to be solved using traditional methods.
 
+<div class="top"></div>
+<div class="right"></div>
+<div class="bottom"></div>
+<div class="left"></div>
+<div class="rotate top"></div>
