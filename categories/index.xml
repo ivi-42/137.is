@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on My cactus website</title>
-    <link>https://ivi-42.github.io/categories/</link>
+    <link>https://137.is/categories/</link>
     <description>Recent content in Categories on My cactus website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>You</copyright><atom:link href="https://ivi-42.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>You</copyright><atom:link href="https://137.is/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

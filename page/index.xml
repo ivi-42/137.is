@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on My cactus website</title>
-    <link>https://ivi-42.github.io/page/</link>
+    <link>https://137.is/page/</link>
     <description>Recent content in Pages on My cactus website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Tue, 27 Dec 2022 15:17:19 +0100</lastBuildDate><atom:link href="https://ivi-42.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Dec 2022 15:17:19 +0100</lastBuildDate><atom:link href="https://137.is/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://ivi-42.github.io/page/about/</link>
+      <link>https://137.is/page/about/</link>
       <pubDate>Tue, 27 Dec 2022 15:17:19 +0100</pubDate>
       
-      <guid>https://ivi-42.github.io/page/about/</guid>
+      <guid>https://137.is/page/about/</guid>
       <description>oh hi!</description>
     </item>
     
