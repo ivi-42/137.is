@@ -6,25 +6,6 @@
     <description>Recent content on My cactus website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>You</copyright>
-    <lastBuildDate>Tue, 27 Dec 2022 15:17:19 +0100</lastBuildDate><atom:link href="https://137.is/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://137.is/page/about/</link>
-      <pubDate>Tue, 27 Dec 2022 15:17:19 +0100</pubDate>
-      
-      <guid>https://137.is/page/about/</guid>
-      <description>oh hi!</description>
-    </item>
-    
-    <item>
-      <title>Hello_world</title>
-      <link>https://137.is/blog/hello_world/</link>
-      <pubDate>Tue, 27 Dec 2022 15:17:02 +0100</pubDate>
-      
-      <guid>https://137.is/blog/hello_world/</guid>
-      <description>hello World </description>
-    </item>
-    
+    <copyright>You</copyright><atom:link href="https://137.is/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
