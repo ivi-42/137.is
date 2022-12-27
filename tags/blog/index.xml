@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on My cactus website</title>
+    <link>https://ivi-42.github.io/tags/blog/</link>
+    <description>Recent content in blog on My cactus website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Tue, 27 Dec 2022 15:17:02 +0100</lastBuildDate><atom:link href="https://ivi-42.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello_world</title>
+      <link>https://ivi-42.github.io/blog/hello_world/</link>
+      <pubDate>Tue, 27 Dec 2022 15:17:02 +0100</pubDate>
+      
+      <guid>https://ivi-42.github.io/blog/hello_world/</guid>
+      <description>hello World </description>
+    </item>
+    
+  </channel>
+</rss>
