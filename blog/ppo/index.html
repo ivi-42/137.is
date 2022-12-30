@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.109.0">
   <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -10,20 +9,22 @@
   <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>137.is</title>
-  <link rel = 'canonical' href = 'https://137.is/'>
+  <title> Hello_world | 137.is</title>
+  <link rel = 'canonical' href = 'https://137.is/blog/ppo/'>
   <meta name="description" content="137.is a research project created to study non-linear systems, DAOs, and cybernetics.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="137.is" />
-<meta property="og:description" content="137.is a research project created to study non-linear systems, DAOs, and cybernetics." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://137.is/" />
+  <meta property="og:title" content="Hello_world" />
+<meta property="og:description" content="PPO" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://137.is/blog/ppo/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-12-27T15:17:02+01:00" />
+<meta property="article:modified_time" content="2022-12-27T15:17:02+01:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="137.is"/>
-<meta name="twitter:description" content="137.is a research project created to study non-linear systems, DAOs, and cybernetics."/>
+<meta name="twitter:title" content="Hello_world"/>
+<meta name="twitter:description" content="PPO"/>
 
   
   
@@ -46,8 +47,6 @@
 
 
   
-  
-    <link href="https://137.is/index.xml" rel="alternate" type="application/rss+xml" title="137.is" />
   
   
   
@@ -86,92 +85,24 @@
 
 
     
-  <section id="about">
-  
-    137.is a research project created to study non-linear systems, DAOs, and cybernetics.
-  
-  
-      <p>Find me on
-      
-      
-      
-        <a class="icon" target="_blank" rel="noopener" href="https://github.com/ivi-42/137.is/" aria-label="github">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        
-         , 
-      
-      
-        <a class="icon" target="_blank" rel="noopener" href="https://www.linkedin.com/in/gianni-pojani-b16640244/" aria-label="linkedin">
-          <i class="fab fa-linkedin" aria-hidden="true"></i>
-        </a>
-        
-         and 
-      
-      
-        <a class="icon" target="_blank" rel="noopener" href="mailto:gianni.pojani@code.berlin" aria-label="Email">
-          <i class="fas fa-envelope" aria-hidden="true"></i>
-        </a>
-        
-        .
-      
-      </p>
-  
-  
-  </section>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <section id="writing">
-    <span class="h1"><a href="https://137.is/posts">Writings</a></span>
-    
-
-    
-    
-      
-    
-    
-    
-    
-    <ul class="post-list">
-      
-      
-        
-      
-      
-        <li class="post-item">
-          <div class="meta"><time datetime="2022-12-28 14:49:56 &#43;0100 CET" itemprop="datePublished">2022-12-28</time></div>
-          <span><a href="https://137.is/blog/137_is/">137_is a website still under construction</a></span>
-        </li>
-      
-        <li class="post-item">
-          <div class="meta"><time datetime="2022-12-27 15:17:02 &#43;0100 CET" itemprop="datePublished">2022-12-27</time></div>
-          <span><a href="https://137.is/blog/hello_world/">Hello_world</a></span>
-        </li>
-      
-        <li class="post-item">
-          <div class="meta"><time datetime="2022-12-27 15:17:02 &#43;0100 CET" itemprop="datePublished">2022-12-27</time></div>
-          <span><a href="https://137.is/blog/ppo/">Hello_world</a></span>
-        </li>
-      
-    </ul>
-    
-  </section>
+  <div class="content" itemprop="articleBody">
+  
+    <h1 id="ppo">PPO</h1>
+<p>I am doing the hugging face Reinforcement Learning Course. It is quite nice, and I though I was going to put some thoughts.</p>
+<p>The first corse parameters is about PPO.</p>
+<p>Proximal Policy Optimization (PPO) is an algorithm for training reinforcement learning (RL) agents. RL is a type of machine learning where an agent learns to take actions in an environment to maximize a reward signal.</p>
+<p>The goal of PPO is to improve the performance of an RL agent by making small, incremental updates to its policy (the strategy the agent uses to choose actions). To do this, PPO uses a technique called &ldquo;policy gradient,&rdquo; which involves estimating the gradient of the expected reward with respect to the parameters of the policy, and using this gradient to update the policy parameters in the direction that is expected to increase the reward.</p>
+<p>PPO has several key features that make it an effective algorithm for training RL agents:</p>
+<p>It is a &ldquo;trust region&rdquo; method, which means that it limits the size of the policy updates to prevent the agent from straying too far from its current policy. This helps to stabilize the learning process and prevent the agent from learning suboptimal policies.</p>
+<p>It uses a &ldquo;clip objective,&rdquo; which means that it clips the probability of actions taken by the agent to keep them within a certain range. This helps to prevent the agent from taking actions that are too risky or extreme, which can lead to poor performance.</p>
+<p>It is computationally efficient and can be implemented with a relatively simple neural network architecture.</p>
+<p>Overall, PPO is a widely used and effective algorithm for training RL agents, and has been applied to a variety of tasks, including playing games, controlling robots, and optimizing industrial processes.</p>
 
   
-  
-    
-  
-  
-    
-    
-      
-    
-  <section id="projects">
-    <span class="h1"><a href="https://github.com/gohugoio">Projects</a></span>
-    <ul class="project-list">
-        
-    </ul>
-  </section>
-  
+  </div>
+</article>
 
 
     <footer id="footer">
