@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://137.is/</loc>
+    <lastmod>2022-12-30T15:40:02+01:00</lastmod>
+  </url><url>
+    <loc>https://137.is/blog/</loc>
+    <lastmod>2022-12-30T15:40:02+01:00</lastmod>
+  </url><url>
+    <loc>https://137.is/blog/ppo/</loc>
+    <lastmod>2022-12-30T15:40:02+01:00</lastmod>
+  </url><url>
     <loc>https://137.is/page/137_is/</loc>
     <lastmod>2022-12-28T14:50:33+01:00</lastmod>
   </url><url>
     <loc>https://137.is/posts/posts/</loc>
-    <lastmod>2022-12-28T14:50:33+01:00</lastmod>
-  </url><url>
-    <loc>https://137.is/</loc>
     <lastmod>2022-12-28T14:50:33+01:00</lastmod>
   </url><url>
     <loc>https://137.is/page/</loc>
@@ -23,16 +29,10 @@
     <loc>https://137.is/about/</loc>
     <lastmod>2022-12-28T14:49:56+01:00</lastmod>
   </url><url>
-    <loc>https://137.is/blog/</loc>
-    <lastmod>2022-12-28T14:49:56+01:00</lastmod>
-  </url><url>
     <loc>https://137.is/page/about-137/</loc>
     <lastmod>2022-12-27T15:17:19+01:00</lastmod>
   </url><url>
     <loc>https://137.is/blog/hello_world/</loc>
-    <lastmod>2022-12-27T15:17:02+01:00</lastmod>
-  </url><url>
-    <loc>https://137.is/blog/ppo/</loc>
     <lastmod>2022-12-27T15:17:02+01:00</lastmod>
   </url><url>
     <loc>https://137.is/categories/</loc>

@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>137.is</copyright>
-    <lastBuildDate>Wed, 28 Dec 2022 14:50:33 +0100</lastBuildDate><atom:link href="https://137.is/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Dec 2022 15:40:02 +0100</lastBuildDate><atom:link href="https://137.is/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PPO</title>
+      <link>https://137.is/blog/ppo/</link>
+      <pubDate>Fri, 30 Dec 2022 15:40:02 +0100</pubDate>
+      
+      <guid>https://137.is/blog/ppo/</guid>
+      <description>PPO I am doing the hugging face Reinforcement Learning Course. It is quite nice, and I though I was going to put some thoughts.
+The first corse parameters is about PPO.
+Proximal Policy Optimization (PPO) is an algorithm for training reinforcement learning (RL) agents. RL is a type of machine learning where an agent learns to take actions in an environment to maximize a reward signal.
+The goal of PPO is to improve the performance of an RL agent by making small, incremental updates to its policy (the strategy the agent uses to choose actions).</description>
+    </item>
+    
     <item>
       <title>137_is</title>
       <link>https://137.is/page/137_is/</link>
@@ -60,18 +72,6 @@
       
       <guid>https://137.is/blog/hello_world/</guid>
       <description>What 137.is? It is a tool that experiment in how a company can work, and see how much a fully distributed system is able to solve problems efficently. This project uses soft computing, on the opposite of hard computing, the terms &amp;ldquo;soft computing&amp;rdquo; and &amp;ldquo;hard computing&amp;rdquo; refer to two different approaches to problem solving. Hard computing, also known as &amp;ldquo;classical computing,&amp;rdquo; refers to the use of traditional, precise algorithms to solve problems.</description>
-    </item>
-    
-    <item>
-      <title>PPO</title>
-      <link>https://137.is/blog/ppo/</link>
-      <pubDate>Tue, 27 Dec 2022 15:17:02 +0100</pubDate>
-      
-      <guid>https://137.is/blog/ppo/</guid>
-      <description>PPO I am doing the hugging face Reinforcement Learning Course. It is quite nice, and I though I was going to put some thoughts.
-The first corse parameters is about PPO.
-Proximal Policy Optimization (PPO) is an algorithm for training reinforcement learning (RL) agents. RL is a type of machine learning where an agent learns to take actions in an environment to maximize a reward signal.
-The goal of PPO is to improve the performance of an RL agent by making small, incremental updates to its policy (the strategy the agent uses to choose actions).</description>
     </item>
     
   </channel>
