@@ -26,7 +26,8 @@ The goal of PPO is to improve the performance of an RL agent by making small, in
       <pubDate>Wed, 28 Dec 2022 14:50:33 +0100</pubDate>
       
       <guid>https://137.is/page/137_is/</guid>
-      <description></description>
+      <description>test posts This is a test post
+package main import &amp;quot;fmt&amp;quot; func main() { fmt.Println(&amp;quot;hello world&amp;quot;) } </description>
     </item>
     
     <item>
