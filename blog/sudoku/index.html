@@ -126,56 +126,6 @@ Having a deterministic approach where algorithms never guess, is not always poss
 <p>Let’s dig into the math a bit more. “Hardness” is a family of ideas about comparisons between problems based on reusability of algorithmic solutions. Loosely speaking, a problem  is hard with respect to a class of problems  if an algorithm solving  can be easily transformed into an algorithm solving any problem in . You have to say what kinds of transformations are allowed, and the transformation can be different for different target problems in , but that’s the basic idea.In the Super Mario example, if you want to solve logical formulas, you can transform a hypothetically perfect mario-level-playing algorithm into a logic solver by encoding the formula as a level and running the mario-level-playing algorithm on it as a black box. Add an if statement to the end to translate “level can/can’t be finished” to “formula can/can’t be satisfied,” and the transformation is complete. It’s important for NP-hardness that the transformation only takes polynomial time. Other kinds of hardness might admit more or restrict to fewer resources.
 And so this is what makes Mario NP-hard, because boolean logic satisfiability is NP-hard. Any problem in NP can be solved by a boolean logic solver, and hence also by a mario-level-player. The fact that boolean logic solving is NP-hard is a difficult theorem to prove. But if we assume it’s true, you can compose the transformations to get from any NP problem to Super Mario.
 Sudoku is another example of a problem that can be related to computational complexity. It has been shown that solving a Sudoku puzzle is an NP-complete problem. This means that it is at least as hard as the hardest problems in the class NP, and if a polynomial-time algorithm for solving Sudoku were found, it would imply that P = NP. However, just like with the Super Mario example, the general hardness of Sudoku doesn&rsquo;t necessarily translate to the difficulty of solving individual puzzles. Sudoku puzzles come in various sizes and difficulty levels. The most common Sudoku puzzles have a 9x9 grid and are designed to be solvable by humans using logical deduction. There are efficient algorithms and heuristics that can solve these puzzles quickly, as well as more complex ones. In practice, the difficulty of Sudoku puzzles for humans and the complexity of solving them algorithmically are not directly correlated. Humans are generally good at pattern recognition and can apply logical reasoning to solve moderately difficult Sudoku puzzles, whereas computers can solve even the most complex Sudoku puzzles efficiently through brute-force search or other algorithmic techniques. So, while Sudoku is an NP-complete problem in its general form, this complexity does not prevent humans or algorithms from solving real-world instances of the problem. This demonstrates that the theoretical complexity of a problem does not always dictate its difficulty in practice, and that heuristic or specialized approaches can be effective for solving instances of hard problems.</p>
-<p>This
-from sympy import groebner, symbols
-x = [symbols(&lsquo;x%d&rsquo; % i) for i in range(81)]</p>
-<p>sudoku = [0,3,0,0,0,0,0,0,0,
-0,0,0,1,9,5,0,0,0,
-0,0,8,0,0,0,5,6,7,
-8,0,0,0,6,0,0,0,0,
-4,0,0,8,0,0,0,0,1,
-0,0,0,0,2,0,0,0,0,
-0,6,0,0,0,0,2,8,0,
-0,0,0,4,1,9,0,0,5,
-0,0,0,0,0,0,0,7,0]</p>
-<p>% solution = [5,3,4,6,7,8,9,1,2,
-%             6,7,2,1,9,5,3,4,8,
-%             1,9,8,3,4,2,5,6,7,
-%             8,5,9,7,6,1,4,2,3,
-%             4,2,6,8,5,3,7,9,1,
-%             7,1,3,9,2,4,8,5,6,
-%             9,6,1,5,3,7,2,8,4,
-%             2,8,7,4,1,9,6,3,5,
-%             3,4,5,2,8,6,1,7,9]</p>
-<p>F=[]</p>
-<h1 id="restrict-values-to-1-9">Restrict values to 1-9</h1>
-<p>for xi in x:
-F.append((xi-1)<em>(xi-2)</em>(xi-3)<em>(xi-4)</em>(xi-5)<em>(xi-6)</em>(xi-7)<em>(xi-8)</em>(xi-9))</p>
-<h1 id="sum-of-lines--45">Sum of lines = 45</h1>
-<p>for i in range(0,80,9):
-F.append(x[i]+x[i+1]+x[i+2]+x[i+3]+x[i+4]+x[i+5]+x[i+6]+x[i+7]+x[i+8]-45)
-for i in range(9):
-F.append(x[i]+x[i+9]+x[i+18]+x[i+27]+x[i+36]+x[i+45]+x[i+54]+x[i+63]+x[i+72]-45)</p>
-<h1 id="product-of-lines--362880">Product of lines = 362880</h1>
-<p>for i in range(0,80,9):
-F.append(x[i]*x[i+1]*x[i+2]*x[i+3]*x[i+4]*x[i+5]*x[i+6]*x[i+7]*x[i+8]-362880)
-for i in range(9):
-F.append(x[i]*x[i+9]*x[i+18]*x[i+27]*x[i+36]*x[i+45]*x[i+54]*x[i+63]*x[i+72]-362880)</p>
-<h1 id="blocks-sum-to-45">Blocks sum to 45</h1>
-<p>for i in [0,3,6,27,30,33,54,57,60]:
-F.append(x[i]+x[i+1]+x[i+2]+x[i+9]+x[i+10]+x[i+11]+x[i+18]+x[i+19]+x[i+20]-45)</p>
-<h1 id="product-of-numbers-in-blocks--362880">Product of numbers in blocks = 362880</h1>
-<p>for i in [0,3,6,27,30,33,54,57,60]:
-F.append(x[i]*x[i+1]*x[i+2]*x[i+9]*x[i+10]*x[i+11]*x[i+18]*x[i+19]*x[i+20]-362880)</p>
-<h1 id="fix-points">Fix points</h1>
-<h1 id="due-to-how-the-buchberger-algorithm-for-computing-gröbner-bases">Due to how the Buchberger algorithm for computing Gröbner bases</h1>
-<h1 id="works-this-is-significantly-faster-if-we-prepend-the-equations">works, this is significantly faster, if we prepend the equations.</h1>
-<p>for count, val in enumerate(sudoku):
-if val != 0:
-F.insert(0,x[count]-val)</p>
-<p>G = groebner(F)
-If you execute the code and wait long enough, then G contains the Gröbner basis representation of the maximal ideal corresponding to the solution of the sudoku as shown below.
-GroebnerBasis([x0 - 5, x1 - 3, x2 - 4, x3 - 6, x4 - 7, x5 - 8, x6 - 9, x7 - 1, x8 - 2, x9 - 6, x10 - 7, x11 - 2, x12 - 1, x13 - 9, x14 - 5, x15 - 3, x16 - 4, x17 - 8, x18 - 1, x19 - 9, x20 - 8, x21 - 3, x22 - 4, x23 - 2, x24 - 5, x25 - 6, x26 - 7, x27 - 8, x28 - 5, x29 - 9, x30 - 7, x31 - 6, x32 - 1, x33 - 4, x34 - 2, x35 - 3, x36 - 4, x37 - 2, x38 - 6, x39 - 8, x40 - 5, x41 - 3, x42 - 7, x43 - 9, x44 - 1, x45 - 7, x46 - 1, x47 - 3, x48 - 9, x49 - 2, x50 - 4, x51 - 8, x52 - 5, x53 - 6, x54 - 9, x55 - 6, x56 - 1, x57 - 5, x58 - 3, x59 - 7, x60 - 2, x61 - 8, x62 - 4, x63 - 2, x64 - 8, x65 - 7, x66 - 4, x67 - 1, x68 - 9, x69 - 6, x70 - 3, x71 - 5, x72 - 3, x73 - 4, x74 - 5, x75 - 2, x76 - 8, x77 - 6, x78 - 1, x79 - 7, x80 - 9], x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27, x28, x29, x30, x31, x32, x33, x34, x35, x36, x37, x38, x39, x40, x41, x42, x43, x44, x45, x46, x47, x48, x49, x50, x51, x52, x53, x54, x55, x56, x57, x58, x59, x60, x61, x62, x63, x64, x65, x66, x67, x68, x69, x70, x71, x72, x73, x74, x75, x76, x77, x78, x79, x80, domain=&lsquo;ZZ&rsquo;, order=&lsquo;lex&rsquo;)</p>
 <p>For linear systems of equations there is Gaussian elimination which transforms a system of linear equations into a standard representation. In the case of linear equations, this normal form is a triangular matrix. For systems of polynomial equations there is also a normal form, called the Gröbner basis. And there is Buchberger’s algorithm which can compute a Gröbner basis. In a very real sense Buchberger’s algorithm is a generalization of Gaussian elimination and in the case of linear equations those two algorithms are equal. So, in summary we can use Buchberger’s algorithm to compute a Gröbner basis of the equations and then read off the solution to the sudoku.</p>
 <p>Boolean logic is hard np -&gt; Boolean satisfability problem -&gt; gaussian elimination -&gt; buchberger’s alghoritm/</p>
 <p>Solving systems of linear equations:</p>
